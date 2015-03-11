@@ -1,12 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\physicsControl.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\finalRoom.cs">
     <Files>
-      <File FileName="Assets\scripts\Hurtable.cs" Line="30" Column="1" />
-      <File FileName="Assets\scripts\switchIt.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\trap.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\finalRoom.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\physicsControl.cs" Line="16" Column="2" />
+      <File FileName="Assets\scripts\trap.cs" Line="17" Column="84" />
+      <File FileName="Assets\scripts\physicsControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Hurtable.cs" Line="23" Column="49" />
+      <File FileName="Assets\scripts\Teleporter.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\switchIt.cs" Line="23" Column="3" />
+      <File FileName="Assets\scripts\ramp.cs" Line="21" Column="43" />
+      <File FileName="Assets\scripts\finalRoom.cs" Line="21" Column="47" />
+      <File FileName="Assets\scripts\Cheese.cs" Line="21" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

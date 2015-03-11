@@ -3,30 +3,30 @@ using System.Collections;
 
 public class trap : MonoBehaviour {
 
-	Collider currentlyInside;
-
+	Collider thingCurrentlyInside;
+	public float damage = 5f;
+	
 	// Use this for initialization
 	void Start () {
-	
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		//if there is something currently inside this trigger
-		if (currentlyInside != null) {
-			//then damage it
-			currentlyInside.GetComponent<Hurtable>().health -= Time.deltaTime * 5f;
+		if (thingCurrentlyInside != null){
+			thingCurrentlyInside.GetComponent<Hurtable>().health -= Time.deltaTime * damage;
 		}
 	}
-	//Unity automatically calls this function when an object w/
-	//Rigidbody enters this object's trigger-collider AND tell you
-	//what entered it
-	void OnTriggerEnter ( Collider activator ) {
-		currentlyInside = activator;//remembers thing that entered trigger
+	
+	
+	// Unity automatically calls this function when an object with 
+	// a rigidbody enters this objects trigger collider, AND it will tell you WHAT entered it.
+	
+	void OnTriggerEnter (Collider activator) {
+		thingCurrentlyInside = activator; // catch it in a variable.
 	}
-
-	void OnTriggerExit (Collider exited ) {
-		//"null" means nothing, empty, absence, absolute nothingness
-		currentlyInside = null;
-	}
+	
+	void OnTriggerExit ( Collider exiter){
+		thingCurrentlyInside = null;
+	} 
 }

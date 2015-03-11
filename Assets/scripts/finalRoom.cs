@@ -1,28 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class finalRoom : MonoBehaviour {
 	
-	Collider inside; 
+	public Text text;
 	// Use this for initialization
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (inside != null) {
-			//then damage it
-			particleSystem.Play ();
-			inside.GetComponent<Hurtable>().health += Time.deltaTime * 20f;
-		}
-	}
+
+
 	void OnTriggerEnter ( Collider activator ) {
-		inside = activator;//remembers thing that entered trigger
+		text.text = "You ate all\nthe cheese!\nYUM";
+
 	}
 	
 	void OnTriggerExit (Collider exited ) {
-		//"null" means nothing, empty, absence, absolute nothingness
-		inside = null;
 	}
 }

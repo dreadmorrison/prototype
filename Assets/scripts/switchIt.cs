@@ -15,10 +15,12 @@ public class switchIt : MonoBehaviour {
 		if (inside != null) {
 			//then damage it
 			Destroy (door);
+			Destroy (this.gameObject);
 		}
 	}
 	void OnTriggerEnter ( Collider activator ) {
 		inside = activator;//remembers thing that entered trigger
+		inside.GetComponent<Cheese>().cheese += 1;
 	}
 	
 	void OnTriggerExit (Collider exited ) {

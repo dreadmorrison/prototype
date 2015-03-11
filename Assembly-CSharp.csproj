@@ -46,12 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\Cheese.cs" />
      <Compile Include="Assets\scripts\Hurtable.cs" />
      <Compile Include="Assets\scripts\Teleporter.cs" />
-     <Compile Include="Assets\scripts\UI.cs" />
      <Compile Include="Assets\scripts\finalRoom.cs" />
      <Compile Include="Assets\scripts\physicsControl.cs" />
-     <Compile Include="Assets\scripts\projectile.cs" />
+     <Compile Include="Assets\scripts\ramp.cs" />
      <Compile Include="Assets\scripts\switchIt.cs" />
      <Compile Include="Assets\scripts\trap.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />

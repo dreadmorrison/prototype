@@ -3,9 +3,10 @@ using System.Collections;
 
 public class physicsControl : MonoBehaviour {
 
-	public float speed = 5f;
-	public float turnSpeed = 45f;
+	public float speed = 100f;
+	public float turnSpeed = 8f;
 	Rigidbody rbuddy;
+	public GameObject rat;
 
 	// Use this for initialization
 	void Start () {
@@ -19,10 +20,9 @@ public class physicsControl : MonoBehaviour {
 	
 		//INPUT AXES: a virtual joystickk that returns a float from -1 to 1
 
-		rbuddy.AddForce ( transform.forward * speed * Input.GetAxis ("Vertical") );
-		rbuddy.AddForce ( transform.right * speed * Input.GetAxis ("Horizontal") );
-
-		//turning
-		//transform.Rotate ( 0f, Input.GetAxis ("Horizontal") * turnSpeed, 0f );
+		rbuddy.AddForce ( transform.right * speed * Input.GetAxis ("Vertical") );
+		//rbuddy.AddForce ( transform.right * speed * Input.GetAxis ("Horizontal") );
+				//turning
+		transform.Rotate ( 0f, Input.GetAxis ("Horizontal") * turnSpeed, 0f );
 	}
 }

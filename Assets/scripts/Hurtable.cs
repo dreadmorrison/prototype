@@ -16,13 +16,12 @@ public class Hurtable : MonoBehaviour {
 	void Update () {
 
 		health = Mathf.Round(health * 100f) / 100f;
-
-		text.text = "Goodfeel: " + health; 
+		text.text = "Health: " + health; 
 
 	if ( health <= 0f ) {
 
-			player.transform.position = new Vector3(40, 3, 40);
-			health = 100;
+			player.transform.position = new Vector3(40, 2, 33);
+			health = 100f;
 		
 		}
 	}
